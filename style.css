@@ -1,0 +1,210 @@
+:root {
+    --rfontsize: 16px;
+    --txtcolor: white;
+    --lineheight: 1.3;
+
+    --txtshadow: 0.08em 0.08em 0.04em black;
+    --titleshadow2: 
+        0em 0em 0.08em black,
+        0em 0em 0.08em black,
+        0em 0em 0.08em black,
+        0em 0em 0.08em black;
+    --boxshadow: 0 0 1rem rgba(0, 0, 0, 0.75);
+    --imgshadow: 0.5rem 0.2rem 1rem rgba(0, 0, 0, 0.55);
+
+    --backgroundcolor: rgb(253, 253, 241);
+    --boxcolor: rgba(48, 47, 36, 0.95);
+
+    --borderradius: 10px;
+    --border: 2px solid rgba(255, 255, 255, 0.3);
+
+} 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    background-color: var(--backgroundcolor);
+    color: var(--txtcolor);
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--rfontsize);
+    line-height: var(--lineheight);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background: url('background.png') repeat-x center bottom / auto 75vh fixed;*/
+    background: url('SfondoMilitare.jpg') fixed center bottom / 100% auto no-repeat;
+    overflow-x: hidden;
+    padding-bottom: 3rem;
+}
+
+/* blocchi */
+
+.header {
+    padding: 7rem 2rem 7rem 2rem;
+    margin: 0;
+    text-align: center;
+
+}
+
+.content {
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 1rem;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.box,
+.foot {
+    background: var(--boxcolor);
+    border-radius: var(--borderradius);
+    border: var(--border);
+    line-height: var(--lineheight);
+    box-shadow: var(--boxshadow);
+
+}
+
+.box {
+    margin: 0 0 1rem 0;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.foot {
+    margin: 2rem 0 1rem 0;
+    padding: 0.5rem  2rem 0.5rem  2rem;
+    text-align: left;
+}
+
+/* immagini */top
+
+.box figure{
+    padding-top: 0;
+    margin: 0;
+}
+
+.box figure img {
+    margin: 2rem 0 0 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: var(--imgshadow);
+
+}
+
+.box figure figcaption {
+    padding: 0 0.3rem 0 0.3rem;
+    border-bottom-left-radius: var(--borderradius);
+    border-bottom: var(--border);
+    border-left: var(--border);
+
+}
+
+.box figure figcaption p {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+/* elementi */
+
+.txtitalic {
+    font-style: italic;
+}
+
+.underline {
+    border-bottom: var(--border);
+}
+
+.alignright {
+    text-align: right;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+
+
+.header h1 {               /*titolo sito*/
+    font-size: 5.5rem;
+    margin: 1rem 0 2rem 0;
+    text-shadow: 
+        var(--txtshadow),        
+        var(--titleshadow2);
+}
+
+.header h2 {              /*sottotitolo sito*/
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 
+        var(--txtshadow),
+        var(--titleshadow2);
+}
+
+.box h1 {                 /*titolo box*/
+    font-size: 3.2rem;
+    margin: 0;
+    text-shadow: var(--txtshadow);
+}
+
+.sottot {                 /*sottotitolo box*/
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 2rem 0 0 0;
+}
+
+.box h2 {                 /*titolo paragrafo*/
+    font-size: 2.2rem;
+    margin: 2rem 0 0 0;
+    text-shadow: var(--txtshadow);
+    border-bottom: var(--border)
+
+}
+
+.paragrafo {                 /*paragrafo*/
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 2rem 0 0 0;
+}
+
+.foot p {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+ 
+.box ul { 
+    padding-left: 3.5rem;
+    list-style-type: square; 
+}
+
+/* tabella footer */
+
+.foot table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.foot table tr td {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    max-width: 50%;
+}
+
+.foot table tr td img {
+    width: auto;
+    height: 200px;
+    vertical-align: middle;
+
+}
