@@ -40,7 +40,7 @@ html {
 
 body {
     /*background: url('background.png') repeat-x center bottom / auto 75vh fixed;*/
-    background: url('SfondoMilitare.jpg') fixed center bottom / 100% auto no-repeat;
+    background: url('imgs/SfondoMilitare.jpg') fixed center bottom / 100% auto no-repeat;
     overflow-x: hidden;
     padding-bottom: 3rem;
 }
