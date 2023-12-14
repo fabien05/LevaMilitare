@@ -153,6 +153,7 @@ body {
     font-size: 3.2rem;
     margin: 0;
     text-shadow: var(--txtshadow);
+    text-align: left;
 }
 
 .sottot {                 /*sottotitolo box*/
